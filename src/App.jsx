@@ -91,7 +91,8 @@ function App() {
       setEditingId(null);
       await loadData();
     } catch (error) {
-      setMessage("Save failed. Backend, department ID, and required fields check chey.");
+      console.error("Save failed:", error);
+setMessage(`Save failed: ${error.message}`);
     }
   }
 
