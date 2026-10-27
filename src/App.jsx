@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 
-const API = "http://localhost:8888/api";
+const API = "https://employee-department-backend.onrender.com/api";
 
 function App() {
   const [tab, setTab] = useState("employees");
